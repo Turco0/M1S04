@@ -21,7 +21,6 @@ body {
   padding: 0.5rem;
   color: white;
   width: 4vw;
-  min-width: none;
   height: -webkit-fill-available;
 
   font-weight: 500;
@@ -48,11 +47,11 @@ body {
   margin-bottom: 2rem;
 }
 
-#sidebar #group-expenses-icon {
+#sidebar #home-icon {
   opacity: 0.5;
 }
 
-#sidebar #group-expenses-icon:hover {
+#sidebar #home-icon:hover {
   opacity: 1;
 }
 
@@ -79,80 +78,34 @@ body {
   font-size: 1.75rem;
 }
 
-.indicators {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: -webkit-fill-available;
-  padding: 2rem 3rem;
+.table-wrapper {
+  margin: 2rem 3rem;
 }
 
-.indicator {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #1a1c22;
-  border-radius: 8px;
-  width: 15vw;
-  padding: 1rem 2rem;
-}
-
-.indicator h4 {
-  margin-bottom: 0.5rem;
-  color: #9e9e9e;
-  font-weight: 400;
-  font-size: 0.875rem;
-}
-
-.indicator p {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-.boxes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: -webkit-fill-available;
-  padding: 1rem 3rem;
-}
-
-.box {
+#group-expenses-table {
   width: 100%;
-  height: 100%;
-  padding: 1rem;
+  color: white;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  color: white;
-  border-radius: 0.5rem;
-  margin: 0 0.5rem;
 }
 
-.box h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
+#group-expenses-table .table-header,
+#group-expenses-table .table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 
-.box ul li {
+#group-expenses-table .table-header {
+  font-weight: 600;
+  padding: 0 0.5rem;
   font-size: 1rem;
-  font-weight: 300;
 }
 
-.earnings {
-  background-color: #196033;
-}
-
-.expenses {
-  background-color: #5d1616;
-}
-
-.list {
-  color: rgb(222, 222, 222);
-  margin: 1rem;
+#group-expenses-table .table-row {
+  background-color: #1a1c22;
+  margin: 0.25rem 0;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 0.875rem;
 }
