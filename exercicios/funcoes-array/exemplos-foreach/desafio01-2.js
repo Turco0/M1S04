@@ -3,7 +3,24 @@
 // 	Volkswagen - Gol G2 - 2002
 // 	Renault - Logan - 2013
 // 	Toyota - Corolla - 2012
-	
+
+// Funcao JS 
+carros.forEach(function(carro) {
+    console.log('marca: ' + carro.marca);
+    console.log('modelo: ' + carro.modelo);
+    console.log('ano: ' + carro.ano);
+    console.log('\n');
+});
+
+// Arrow Functions -> ES6 - JS MODERNO
+carros.forEach((carro) => {
+    console.log('marca: ' + carro.marca);
+    console.log('modelo: ' + carro.modelo);
+    console.log('ano: ' + carro.ano);
+    console.log('\n');
+});
+
+// Arrow Functions -> ES6 - JS MODERNO -> Syntax Sugar
 const carros = [
     {
         marca: 'Fiat',
@@ -27,38 +44,20 @@ const carros = [
     },
 ];
 
-
-// Funcao JS 
-carros.forEach(function(carro) {
-    console.log('marca: ' + carro.marca);
-    console.log('modelo: ' + carro.modelo);
-    console.log('ano: ' + carro.ano);
-    console.log('\n');
-});
-
-// Arrow Functions -> ES6 - JS MODERNO
-carros.forEach((carro) => {
-    console.log('marca: ' + carro.marca);
-    console.log('modelo: ' + carro.modelo);
-    console.log('ano: ' + carro.ano);
-    console.log('\n');
-});
-
-// Arrow Functions -> ES6 - JS MODERNO -> Syntax Sugar
-carros.forEach((carro) => console.log('marca: ' + carro.marca));
-
-
-
 const imprimir = function(carro) {
     console.log('marca: ' + carro.marca);
     console.log('modelo: ' + carro.modelo);
     console.log('ano: ' + carro.ano);
     console.log('\n');
 }
+carros.forEach((carro) => imprimir(carro));
+
+
 
 // Arrow function
 const numeros = [1, 2, 3, 4];
 const numerosVezes2 = numeros.map((numero) =>  numero * 2);
+console.log(numeros)
 console.log(numerosVezes2);
 
 

@@ -17,4 +17,12 @@ const soma = numeros.reduce(function (acumulador, valorAtual) {
     return acumulador + valorAtual  
 });
 
-console.log(soma); 
+console.log(soma);
+
+const array = [1, 22, 31, 40, 3, 5 ,0];
+
+const maior = array.reduce((a, b) => a > b? a : b);
+const menor = array.reduce((a, b) => a < b? a : b);
+
+console.log(maior);
+console.log(menor);

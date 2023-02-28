@@ -47,3 +47,12 @@ function checaCarroBatido(carro) {
     // return carro.batido === false
         return !carro.batido
 }
+
+function d20() {return Math.floor(Math.random() *21)}
+let numero = 0
+
+do {
+    numero = d20()
+    console.log(numero)
+}
+while (numero!= 20)

@@ -10,17 +10,9 @@ const pessoas = [
         anoNascimento: 2006
     }
 ];
-
 const pessoasComIdades = 
-    pessoas
-    .map(function(pessoa) {
-        return {
-            ...pessoa
-        }
-    }) // cópia do objeto/array [ { nome: 'Joaquim', anoNascimento: 2019 }, { nome: 'Maria', anoNascimento: 2006 }]
-    .map(function (pessoa) {
-        pessoa.idade = 2023 - pessoa.anoNascimento;
-        return pessoa;
+    pessoas.map((pessoa) => {return {nome: pessoa.nome, anoNascimento: pessoa.anoNascimento, idade: 2023 - pessoa.anoNascimento}});
+
         
         // console.log(pessoa);
         // return pessoa;
@@ -30,7 +22,6 @@ const pessoasComIdades =
         //     year: pessoa.anoNascimento,
         //     age: 2023 - pessoa.anoNascimento
         // }
-    });
 
 console.log(pessoas);
 console.log(pessoasComIdades);
